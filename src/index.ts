@@ -9,3 +9,5 @@ export const createContext = async (ctx: any): Promise<Context> => {
 
     return { ...ctx, prisma };
 };
+
+export default prisma;
