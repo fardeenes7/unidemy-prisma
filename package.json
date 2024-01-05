@@ -1,0 +1,34 @@
+{
+    "name": "unidemy-prisma",
+    "version": "1.0.0",
+    "description": "Prisma setup for unidemy",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "tsc && cp src/index.d.ts dist/index.d.ts && npx prisma@2.18.0 generate",
+        "db:introspect": "dotenv -- prisma introspect",
+        "db:generate": "dotenv -- prisma generate"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fardeenes7/unidemy-prisma.git"
+    },
+    "keywords": [
+        "unidemy"
+    ],
+    "author": "fardeenes7",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/fardeenes7/unidemy-prisma/issues"
+    },
+    "homepage": "https://github.com/fardeenes7/unidemy-prisma#readme",
+    "dependencies": {
+        "@prisma/client": "2.18.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.6",
+        "dotenv-cli": "^4.0.0",
+        "prisma": "^5.7.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    }
+}
