@@ -4,7 +4,7 @@
     "description": "Prisma setup for unidemy",
     "main": "index.js",
     "scripts": {
-        "postinstall": "tsc && cp src/index.d.ts dist/index.d.ts  && npx prisma@5.7.1 generate",
+        "postinstall": "tsc && mkdir -p dist && cp src/index.d.ts dist/index.d.ts && npx prisma@5.7.1 generate",
         "db:introspect": "dotenv -- prisma introspect",
         "db:generate": "dotenv -- prisma generate",
         "test": "echo \"Error: no test specified\" && exit 1"
