@@ -1,6 +1,6 @@
 {
     "name": "@fardeenes7/unidemy-prisma",
-    "version": "v1.24.1.5",
+    "version": "v1.24.01.05",
     "description": "Prisma setup for unidemy",
     "main": "index.js",
     "scripts": {
