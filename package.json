@@ -1,5 +1,5 @@
 {
-    "name": "unidemy-prisma",
+    "name": "@fardeenes7/unidemy-prisma",
     "version": "1.0.0",
     "description": "Prisma setup for unidemy",
     "main": "index.js",
@@ -32,6 +32,6 @@
         "typescript": "^5.3.3"
     },
     "publishConfig": {
-        "@YOUR-USERNAME:registry": "https://npm.pkg.github.com"
+        "@fardeenes7:registry": "https://npm.pkg.github.com"
     }
 }
