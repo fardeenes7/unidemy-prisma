@@ -1,13 +1,10 @@
 {
     "name": "@fardeenes7/unidemy-prisma",
-    "version": "v1.24.01.10",
+    "version": "v1.24.01.11",
     "description": "Prisma setup for unidemy",
     "main": "index.js",
     "scripts": {
-        "postinstall": "tsc && mkdir -p dist && cp src/index.d.ts dist/index.d.ts && npx prisma@5.7.1 generate",
-        "db:introspect": "dotenv -- prisma introspect",
-        "db:generate": "dotenv -- prisma generate",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "prepare": "npx prisma generate && tsc && cp src/index.d.ts dist/index.d.ts"
     },
     "repository": {
         "type": "git",
@@ -32,6 +29,10 @@
         "ts-node": "^10.9.2",
         "typescript": "^5.3.3"
     },
+    "bundledDependencies": [
+        "@prisma/client",
+        ".prisma"
+    ],
     "publishConfig": {
         "@fardeenes7:registry": "https://npm.pkg.github.com"
     }
