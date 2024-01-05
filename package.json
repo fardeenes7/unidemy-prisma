@@ -2,7 +2,8 @@
     "name": "@fardeenes7/unidemy-prisma",
     "version": "v1.1.0",
     "description": "Prisma setup for unidemy",
-    "main": "index.js",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "scripts": {
         "prepare": "npx prisma generate && tsc && cp src/index.d.ts dist/index.d.ts"
     },
